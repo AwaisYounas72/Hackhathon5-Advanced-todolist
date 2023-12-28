@@ -6,7 +6,7 @@ const {
     registerUser,
     loginUser,
     signinUser,
-} = require('../Controllers/user.controller');
+} = require('../controllers/user.controller');
 
 
 // Route 01 : Method => POST --> Register the User --> localhost:8000/api/auth/register 
