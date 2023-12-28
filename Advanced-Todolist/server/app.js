@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: ["http://localhost:5173","https://hackhathon5-advanced-todolist-evfb.vercel.app"]
 }));
 
 

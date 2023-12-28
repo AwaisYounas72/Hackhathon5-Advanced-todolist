@@ -22,7 +22,7 @@ const Todo = () => {
     const descRef = useRef(null)
     const [category, setCategory] = useState([])
 
-    let domain = "http://localhost:3000"
+    let domain = "https://hackhathon5-advanced-todolist.vercel.app"
 
     // Fetch all the todo
     const fetchALLTodo = async () => {

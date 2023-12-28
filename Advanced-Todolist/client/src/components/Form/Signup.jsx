@@ -23,7 +23,7 @@ const Signup = () => {
 
     const handleSubmit = async () => {
         console.log({name,email,password})
-        const res = await fetch('http://localhost:3000/api/auth/register', {
+        const res = await fetch('https://hackhathon5-advanced-todolist.vercel.app/api/auth/register', {
             method: "post",
             headers: {
                 "content-type": "application/json"
