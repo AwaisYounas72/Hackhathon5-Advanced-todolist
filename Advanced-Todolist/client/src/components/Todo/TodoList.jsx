@@ -89,7 +89,7 @@ const TodoList = ({ todo, setEditData, handleEditTodo, handleDeleteTodo, setStat
                 theme="dark"
             />
             {todo && (
-                <div className="block max-w-[20rem] p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer">
+                <div className="block  max-w-[20rem] p-4 bg-gray-300 border   rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer">
                     <div className="grid grid-cols-6 place-items-center">
                         {todo.isCompleted !== undefined && (
                             <div className="checkbox-wrapper dark:text-white" >
