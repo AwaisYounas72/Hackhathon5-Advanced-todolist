@@ -370,18 +370,18 @@ const Todo = () => {
                 theme="dark"
             />
              <div className="flex justify-center flex-wrap my-8 space-x-4">
-                    <div className="text-white bg-gray-600 md:p-9 p-3 rounded-md flex justify-center items-center my-2">
-                        All Todos: <span className="py-1 px-2 rounded-md ml-3 bg-cyan-950">{todos !== 'undefined' && todos.length}</span>
+                    <div className="text-gray-900 bg-gray-300 md:p-9 p-3 rounded-md flex justify-center items-center my-2">
+                        All Todos: <span className="py-1 px-2 rounded-md ml-3 bg-white">{todos !== 'undefined' && todos.length}</span>
                     </div>
-                    <div className="text-white bg-gray-600 p-3 rounded-md flex justify-center items-center my-2">
-                        Complete Todos: <span className="py-1 px-2 rounded-md ml-3 bg-cyan-950">{todos !== 'undefined' && todos.filter(todo => todo.completed).length}</span>
+                    <div className="text-gray-900 bg-gray-300 p-3 rounded-md flex justify-center items-center my-2">
+                        Complete Todos: <span className="py-1 px-2 rounded-md ml-3 bg-white">{todos !== 'undefined' && todos.filter(todo => todo.completed).length}</span>
                     </div>
-                    <div className="text-white bg-gray-600 p-3 rounded-md flex justify-center items-center my-2">
-                        Remaining Todos: <span className="py-1 px-2 rounded-md ml-3 bg-cyan-950">{todos !== 'undefined' && todos.filter(todo => !todo.completed).length}</span>
+                    <div className="text-gray-900 bg-gray-300 p-3 rounded-md flex justify-center items-center my-2">
+                        Remaining Todos: <span className="py-1 px-2 rounded-md ml-3 bg-white">{todos !== 'undefined' && todos.filter(todo => !todo.completed).length}</span>
                     </div>
                 </div>
             <div className="h-auto w-full flex justify-center items-center flex-col  dark:bg-gray-800 from-slate-500 to-slate-500 ">
-                <div className="border border-gray-500 bg-slate-700 p-6  mt-10  rounded-lg w-full md:max-w-[40rem]">
+                <div className="border border-white bg-gray-300 p-6  mt-10  rounded-lg w-full md:max-w-[40rem]">
                     <div className="flex flex-col mb-6">
                         <CategoryModal category={category} setCategory={setCategory} />
 
@@ -390,22 +390,22 @@ const Todo = () => {
                            <button className="bg-indigo-600 text-white flex justify-center items-center p-3 rounded-md group" onClick={handleAddToDo}>
                                 <FaRegSquarePlus className="mx-2 group-active:animate-ping hidden md:inline" /> Add Todo
                             </button>
-                            <button className="bg-red-600 text-white flex justify-center items-center p-3 rounded-md group" onClick={handleClearAll}>
+                            <button className="bg-green-600 text-white flex justify-center items-center p-3 rounded-md group" onClick={handleClearAll}>
                                 <IoMdNuclear className="mx-2 group-active:animate-ping hidden md:inline" /> Clear ALL
                             </button>
                            </div>
                              <div  className="flex flex-col gap-3">
-                             <button className="bg-yellow-500 text-white flex justify-center items-center p-3 rounded-md group" onClick={handleClearCompleted}>
+                             <button className="bg-green-600 text-white flex justify-center items-center p-3 rounded-md group" onClick={handleClearCompleted}>
                                 <GrCompliance className="mx-2 group-active:animate-ping hidden md:inline" /> Clear Completed
                             </button>
-                            <button className="bg-green-600 text-white flex justify-center items-center p-3 rounded-md group" >
+                            <button className="bg-indigo-600 text-white flex justify-center items-center p-3 rounded-md group" >
                                 <AiFillEdit className="mx-2 group-active:animate-ping hidden md:inline" /> Update Todo
                             </button>
                              </div>
                         </div>
 
                         <div className="tracking-wide mt-6">
-                            <label htmlFor="title" className="text-white text-lg">Title</label>
+                            <label htmlFor="title" className="text-gray-900 text-lg">Title</label>
                             <input
                                 ref={titleRef}
                                 type="text"
@@ -417,7 +417,7 @@ const Todo = () => {
                             />
                         </div>
                         <div className="mt-4 tracking-wide">
-                            <label htmlFor="description" className="text-white text-lg">Description</label>
+                            <label htmlFor="description" className="text-gray-900 text-lg">Description</label>
                             <input
                                 ref={descRef}
                                 type="text"
